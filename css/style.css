@@ -56,3 +56,42 @@ body {
     width: 30px;
     height: 21px;
 }
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav_buttons {
+        display: none;
+        width: 100%;
+    }
+
+    .nav_buttons ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav_buttons ul li {
+        text-align: center;
+    }
+
+    .nav_buttons ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav_buttons.active {
+        display: flex;
+    }
+}
